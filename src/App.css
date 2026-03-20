@@ -1,0 +1,44 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redux-navbar {
+  width: 100%;
+  display: flex;
+}
+
+.redux-side-nav {
+  width: 200px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.redux-content{
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redux-nav ul {
+  margin-bottom: 1rem;
+  color: #007bff
+}
+
+.redux-nav ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.redux-nav ul li > a { 
+  text-decoration: none;
+  color: #007bff;
+}
