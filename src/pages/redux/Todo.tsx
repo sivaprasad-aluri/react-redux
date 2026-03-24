@@ -1,7 +1,16 @@
-import React from "react";
+import { Box, Typography } from "@mui/material";
 
 const Todo = () => {
-  return <div>Todo</div>;
+  return (
+    <Box
+      display="flex"
+      justifyContent="center"
+      height="100vh"
+      alignItems="center"
+    >
+      <Typography variant="h4"> Todo</Typography>
+    </Box>
+  );
 };
 
 export default Todo;

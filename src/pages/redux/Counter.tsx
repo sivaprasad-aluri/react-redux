@@ -19,7 +19,13 @@ const Counter = () => {
   }, [count, dispatch]);
 
   return (
-    <div>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems=" center"
+      height="100vh"
+      overflow="scroll-y"
+    >
       <Paper
         elevation={3}
         style={{
@@ -58,7 +64,7 @@ const Counter = () => {
           Reset
         </Button>
       </Paper>
-    </div>
+    </Box>
   );
 };
 
