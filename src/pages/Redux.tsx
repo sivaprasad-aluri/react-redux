@@ -1,8 +1,9 @@
+import { Box } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 
 const Redux = () => {
   return (
-    <div className="page">
+    <Box className="page">
       <section className="redux-navbar">
         <aside className="redux-side-nav">
           <nav className="redux-nav">
@@ -13,14 +14,17 @@ const Redux = () => {
               <li>
                 <Link to="/redux/todo">Todo</Link>
               </li>
+              <li>
+                <Link to="/redux/users">Users</Link>
+              </li>
             </ul>
           </nav>
         </aside>
-        <article className="redux-content">
+        <Box className="redux-content">
           <Outlet />
-        </article>
+        </Box>
       </section>
-    </div>
+    </Box>
   );
 };
 

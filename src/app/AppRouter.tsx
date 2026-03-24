@@ -7,6 +7,7 @@ import Home from "../pages/Home";
 import MainLayout from "../layouts/MainLayout";
 import Counter from "../pages/redux/Counter";
 import Todo from "../pages/redux/Todo";
+import Users from "../pages/redux/Users";
 
 export const AppRouter = () => {
   return (
@@ -18,6 +19,7 @@ export const AppRouter = () => {
           <Route path={ROUTE_PATHS.REDUX} element={<Redux />}>
             <Route index element={<Counter />} />
             <Route path="todo" element={<Todo />} />
+            <Route path="users" element={<Users />} />
             <Route path="*" element={<NotFound />} />
           </Route>
 
